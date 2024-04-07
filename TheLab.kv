@@ -4,28 +4,35 @@ BoxLayoutExample:
     orientation: "vertical"
     Label: 
         text: "Pomodoro"
-        size_hint: 1, 2
-        
-    Button:
-        text: "Start"
-        size_hint: None, None
-        width: "150dp"
-        height: "75dp"
-        pos_hint: {"center_x" : .5}
+        size_hint: 1, .5
+
+    Label:
+        text: "00:00"
+        size_hint: 1, .5
+
+    BoxLayout:
+        pos_hint:  {"center_x" : .7}       
+        Button:
+            text: "Start"
+            size_hint: None, None
+            width: "150dp"
+            height: "75dp"
+            pos_hint:  {"center_y" : .75}
     
-    Button:
-        text: "Pause"
-        size_hint: None, None
-        width: "150dp"
-        height: "75dp"
-        pos_hint: {"center_x" : .5}
+        Button:
+            text: "Pause"
+            size_hint: None, None
+            width: "150dp"
+            height: "75dp"
+            pos_hint:  {"center_y" : .75}
+
     
-    Button:
-        text: "Reset"
-        size_hint: None, None
-        width: "150dp"
-        height: "75dp"
-        pos_hint: {"center_x" : .5}
+        Button:
+            text: "Reset"
+            size_hint: None, None
+            width: "150dp"
+            height: "75dp"
+            pos_hint:  {"center_y" : .75}
 
 <MainWidget>:
     Label: 
