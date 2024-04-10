@@ -2,6 +2,11 @@ BoxLayoutExample:
 
 <BoxLayoutExample>:
     orientation: "vertical"
+    canvas.before:
+        Rectangle:
+            source: "res/Bg.jpg"
+            pos:  self.pos
+            size: self.size
     Label: 
         text: "Pomodoro"
         size_hint: 1, .5
@@ -11,7 +16,8 @@ BoxLayoutExample:
         size_hint: 1, .5
 
     BoxLayout:
-        pos_hint:  {"center_x" : .7}       
+        pos_hint:  {"center_x" : 1}   #layout of the three buttons to be fixed to the center
+        spacing: "10dp"    
         Button:
             text: "Start"
             size_hint: None, None
